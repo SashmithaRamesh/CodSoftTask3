@@ -47,7 +47,7 @@ const Desktop = () => {
             Get Started
           </button>
           <p className="getstart-login-text">
-            Already have an account? <a href="#">Login</a>
+            Already have an account? Login
           </p>
         </div>
       </div>
