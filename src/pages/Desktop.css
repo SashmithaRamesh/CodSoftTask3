@@ -1,0 +1,233 @@
+:root {
+  --color-teal: #2e7d32;
+  --color-white: #ffffff;
+  --font-main: 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+}
+
+.landing-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Left Section */
+.left-section {
+  flex: 1;
+  min-width: 320px;
+  background-color: var(--color-white);
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo-image {
+  width: 60px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.app-name {
+  color: #2e7d32;
+  font-size: 29px;
+  letter-spacing: 0.03em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.illustration {
+  max-width: 100%;
+  height: auto;
+  width: 80%;
+  margin: 20px 0;
+}
+
+.left-text h2 {
+  color: #2e7d32;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 12px;
+  letter-spacing: 0.05em;
+}
+
+.left-text p {
+  font-size: 14px;
+  color: #444;
+  text-align: center;
+}
+
+/* Right Section */
+.right-section {
+  flex: 1;
+  min-width: 320px;
+  background-image: url('https://img.freepik.com/free-photo/chicken-skewers-with-slices-sweet-peppers-dill_2829-18813.jpg?ga=GA1.1.380960133.1744820218&semt=ais_hybrid&w=740');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  color: var(--color-white);
+}
+
+/* Top-left text */
+.top-left-text-group {
+  position: absolute;
+  top: 39px;
+  left: 60px;
+  text-align: left;
+  z-index: 2;
+}
+
+.title {
+  font-size: 33px;
+  font-weight: bold;
+  margin: 0 0 8px 0;
+  letter-spacing: 0.07em;
+}
+
+.subtitle-below-title {
+  font-size: 20px;
+  margin: 0;
+  color: var(--color-white);
+  max-width: 420px;
+  letter-spacing: 0.07em;
+}
+
+/* Overlay Box */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px 30px;
+  border-radius: 14px;
+  text-align: center;
+  width: 65%;
+  max-width: 510px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  z-index: 2;
+}
+
+.quote-text {
+  font-size: 26px;
+  color: #f0f0f0;
+  font-style: italic;
+  text-align: center;
+  max-width: 400px;
+}
+
+.get-started-btn {
+  background-color: #2e7d32;
+  color: var(--color-white);
+  padding: 14px 36px;
+  font-size: 20px;
+  border: none;
+  border-radius: 17px;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  transition: background-color 0.3s ease;
+}
+
+.get-started-btn:hover {
+  background-color: #256428;
+}
+
+.login-text {
+  font-size: 19px;
+  font-weight: 500;
+  color: #e0e0e0;
+}
+
+.login-text a {
+  color: var(--color-white);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+}
+
+/* Responsive Enhancements */
+@media (max-width: 1024px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .subtitle-below-title {
+    font-size: 18px;
+  }
+
+  .quote-text {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .landing-container {
+    flex-direction: column;
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .top-left-text-group {
+    top: 20px;
+    left: 20px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .subtitle-below-title {
+    font-size: 14px;
+    max-width: 100%;
+  }
+
+  .overlay {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  .quote-text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-name {
+    font-size: 22px;
+  }
+
+  .left-text h2 {
+    font-size: 16px;
+  }
+
+  .left-text p {
+    font-size: 12px;
+  }
+
+  .get-started-btn {
+    font-size: 16px;
+    padding: 10px 24px;
+  }
+
+  .login-text {
+    font-size: 14px;
+  }
+
+  .quote-text {
+    font-size: 18px;
+  }
+}
