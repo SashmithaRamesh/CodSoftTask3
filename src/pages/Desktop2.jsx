@@ -18,11 +18,11 @@ const Desktop2= () => {
           <div className="tablerclock" />
           <div className="min">10min</div>
           <div className="div">4.8</div>
-          <img
+          {/*<img
             className="materialSymbolsLightstarOuIcon"
             alt=""
             src="/materialsymbolslightstaroutline1.svg"
-          />
+          />*/}
           <img className="itemsItem" alt="" src="/group-31.svg" />
         </div>
         <div className="div1">$25.00</div>

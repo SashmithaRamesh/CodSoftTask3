@@ -1,6 +1,6 @@
 /* Desktop1.css */
 .desktop {
-  background-color: #fff6ed;
+  background-color: #aee3b1;
   padding: 20px;
   font-family: Arial, sans-serif;
   min-height: 100vh;
@@ -8,24 +8,26 @@
 }
 
 .home {
-  max-width: 1000px;
+  max-width: 1200px; /* increased from 1000px */
   margin: 0 auto;
 }
 
 .menu {
-  font-size: 24px;
+  font-size: 27px;
   font-weight: bold;
   margin-bottom: 20px;
+  color: #124f15;
 }
 
 .search-box {
   display: flex;
   align-items: center;
   background-color: white;
-  border-radius: 10px;
-  padding: 8px 12px;
+  border-radius: 15px;
+  padding: 8px 15px; /* Increased vertical padding */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+  height: 50px; /* Optional: explicitly set height */
 }
 
 .search-icon {
@@ -35,37 +37,44 @@
 }
 
 .search-input {
+  color: #124f15;
   border: none;
   outline: none;
   width: 100%;
   font-size: 16px;
 }
 
+.search-input::placeholder {
+  color: #2e7d32;
+  opacity: 1; /* Ensures color is not faded in some browsers */
+}
+
 .category-header {
   display: flex;
-  gap: 12px;
+  gap: 17px;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 .category {
-  background-color: #ffe0c7;
-  padding: 8px 16px;
-  border-radius: 20px;
+  background-color: #7fd784;
+  padding: 13px 16px;
+  border-radius: 18px;
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .category.active {
-  background-color: #ff9e57;
+  background-color: #2e7d32;
   color: white;
 }
 
 .dishes {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 16px;
-  margin-bottom: 60px;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* wider cards */
+  gap: 25px;
+  margin-bottom: 90px;
 }
 
 .dish-card {
@@ -86,15 +95,16 @@
 
 .dish-image {
   width: 100%;
-  height: 120px;
+  height: 120px; /* reduced height */
   object-fit: cover;
 }
 
 .dish-info {
-  padding: 12px;
+  padding: 14px;
+  min-height: 100px; /* reduced height */
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
 }
 
 .dish-meta {

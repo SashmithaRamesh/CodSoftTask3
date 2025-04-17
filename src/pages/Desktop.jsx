@@ -32,6 +32,7 @@ const Desktop = () => {
       <div className="right-section">
         <div className="top-left-text-group">
           <h3 className="title">Delicious foods</h3>
+          <br></br>
           <p className="subtitle-below-title">
             Let us help you discover the best food from best restaurants.
           </p>
