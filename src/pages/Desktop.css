@@ -1,15 +1,15 @@
 :root {
-  --color-teal: #2e7d32;
-  --color-white: #ffffff;
-  --font-main: 'Segoe UI', sans-serif;
+  --getstart-color-teal: #2e7d32;
+  --getstart-color-white: #ffffff;
+  --getstart-font-main: 'Segoe UI', sans-serif;
 }
 
-body {
+.getstart-body {
   margin: 0;
-  font-family: var(--font-main);
+  font-family: var(--getstart-font-main);
 }
 
-.landing-container {
+.getstart-landing-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -17,11 +17,10 @@ body {
   width: 100%;
 }
 
-/* Left Section */
-.left-section {
+.getstart-left-section {
   flex: 1;
   min-width: 320px;
-  background-color: var(--color-white);
+  background-color: var(--getstart-color-white);
   padding: 40px 20px;
   display: flex;
   flex-direction: column;
@@ -29,43 +28,42 @@ body {
   justify-content: flex-start;
 }
 
-.logo-image {
+.getstart-logo-image {
   width: 60px;
   height: auto;
   margin-bottom: 10px;
 }
 
-.app-name {
-  color: #2e7d32;
+.getstart-app-name {
+  color: var(--getstart-color-teal);
   font-size: 29px;
   letter-spacing: 0.03em;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
-.illustration {
+.getstart-illustration {
   max-width: 100%;
   height: auto;
   width: 80%;
   margin: 20px 0;
 }
 
-.left-text h2 {
-  color: #2e7d32;
+.getstart-left-title {
+  color: var(--getstart-color-teal);
   font-size: 20px;
   text-align: center;
   margin-bottom: 12px;
   letter-spacing: 0.05em;
 }
 
-.left-text p {
+.getstart-left-subtitle {
   font-size: 14px;
   color: #444;
   text-align: center;
 }
 
-/* Right Section */
-.right-section {
+.getstart-right-section {
   flex: 1;
   min-width: 320px;
   background-image: url('https://img.freepik.com/free-photo/chicken-skewers-with-slices-sweet-peppers-dill_2829-18813.jpg?ga=GA1.1.380960133.1744820218&semt=ais_hybrid&w=740');
@@ -76,11 +74,10 @@ body {
   justify-content: center;
   align-items: center;
   padding: 40px;
-  color: var(--color-white);
+  color: var(--getstart-color-white);
 }
 
-/* Top-left text */
-.top-left-text-group {
+.getstart-top-left-text-group {
   position: absolute;
   top: 39px;
   left: 60px;
@@ -88,23 +85,22 @@ body {
   z-index: 2;
 }
 
-.title {
+.getstart-title {
   font-size: 33px;
   font-weight: bold;
   margin: 0 0 8px 0;
   letter-spacing: 0.07em;
 }
 
-.subtitle-below-title {
+.getstart-subtitle-below-title {
   font-size: 20px;
   margin: 0;
-  color: var(--color-white);
+  color: var(--getstart-color-white);
   max-width: 420px;
   letter-spacing: 0.07em;
 }
 
-/* Overlay Box */
-.overlay {
+.getstart-overlay {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 40px 30px;
   border-radius: 14px;
@@ -119,7 +115,7 @@ body {
   z-index: 2;
 }
 
-.quote-text {
+.getstart-quote-text {
   font-size: 26px;
   color: #f0f0f0;
   font-style: italic;
@@ -127,9 +123,9 @@ body {
   max-width: 400px;
 }
 
-.get-started-btn {
-  background-color: #2e7d32;
-  color: var(--color-white);
+.getstart-get-started-btn {
+  background-color: var(--getstart-color-teal);
+  color: var(--getstart-color-white);
   padding: 14px 36px;
   font-size: 20px;
   border: none;
@@ -139,95 +135,94 @@ body {
   transition: background-color 0.3s ease;
 }
 
-.get-started-btn:hover {
+.getstart-get-started-btn:hover {
   background-color: #256428;
 }
 
-.login-text {
+.getstart-login-text {
   font-size: 19px;
   font-weight: 500;
   color: #e0e0e0;
 }
 
-.login-text a {
-  color: var(--color-white);
+.getstart-login-text a {
+  color: var(--getstart-color-white);
   text-decoration: none;
   letter-spacing: 0.05em;
 }
 
-/* Responsive Enhancements */
 @media (max-width: 1024px) {
-  .title {
+  .getstart-title {
     font-size: 28px;
   }
 
-  .subtitle-below-title {
+  .getstart-subtitle-below-title {
     font-size: 18px;
   }
 
-  .quote-text {
+  .getstart-quote-text {
     font-size: 22px;
   }
 }
 
 @media (max-width: 768px) {
-  .landing-container {
+  .getstart-landing-container {
     flex-direction: column;
   }
 
-  .left-section,
-  .right-section {
+  .getstart-left-section,
+  .getstart-right-section {
     width: 100%;
     padding: 30px;
   }
 
-  .top-left-text-group {
+  .getstart-top-left-text-group {
     top: 20px;
     left: 20px;
   }
 
-  .title {
+  .getstart-title {
     font-size: 24px;
   }
 
-  .subtitle-below-title {
+  .getstart-subtitle-below-title {
     font-size: 14px;
     max-width: 100%;
   }
 
-  .overlay {
+  .getstart-overlay {
     width: 90%;
     padding: 30px 20px;
   }
 
-  .quote-text {
+  .getstart-quote-text {
     font-size: 20px;
   }
 }
 
 @media (max-width: 480px) {
-  .app-name {
+  .getstart-app-name {
     font-size: 22px;
   }
 
-  .left-text h2 {
+  .getstart-left-title {
     font-size: 16px;
   }
 
-  .left-text p {
+  .getstart-left-subtitle {
     font-size: 12px;
   }
 
-  .get-started-btn {
+  .getstart-get-started-btn {
     font-size: 16px;
     padding: 10px 24px;
   }
 
-  .login-text {
+  .getstart-login-text {
     font-size: 14px;
   }
 
-  .quote-text {
+  .getstart-quote-text {
     font-size: 18px;
   }
 }

@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #f0f0f0;
+  background-color: #aee3b1;
   font-family: 'Inter', sans-serif;
   padding: 40px 20px;
   box-sizing: border-box;
@@ -33,37 +33,25 @@
 }
 
 .main-details {
-  margin-top: 20px;
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-
-.item-name {
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-  margin: 0;
-}
-
-.item-price {
-  font-size: 20px;
-  font-weight: 600;
-  color: #27ae60;
-  margin: 0;
-}
-
-.item-time {
   font-size: 16px;
-  color: #00bfa6;
-  margin: 0;
+  line-height: 1.6;
+  color: #333;
+  text-align: left; /* Ensures left alignment */
 }
 
-.item-description {
-  margin-top: 20px;
-  font-size: 14px;
-  color: #666;
-  line-height: 1.6;
+.stars {
+  margin-left: 8px;
+}
+
+.star {
+  font-size: 18px;
+  color: white; /* Fill color */
+  -webkit-text-stroke: 1px green; /* Green border */
+  text-stroke: 1px green; /* Fallback */
+}
+
+.star.filled {
+  color: green; /* Filled stars in green */
 }
 
 /* Right Section */
@@ -71,7 +59,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  background-image: url('https://img.tineye.com/result/7a686f9f0623956822170e9388594e1ca3ec89ab5eae0b4175305700df242258-20?size=160'); /* Replace with your image path */
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRb8UB2RUE1wKE3OLsuLFmo3m9b96M_J1tkg&s'); /* Replace with your image path */
   background-size: cover;
   background-position: center;
   padding: 20px;
@@ -80,10 +68,12 @@
 }
 
 .similar-heading {
-  font-size: 20px;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 770;
+  color: #0b310c;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  letter-spacing: 0.03em;
 }
 
 .similar-items {
@@ -119,10 +109,29 @@
   font-size: 16px;
   font-weight: bold;
   margin: 0 0 5px 0;
-  color: #333;
+  color: #124f15;
 }
 
 .item-meta {
   font-size: 13px;
-  color: #777;
+  color: #2e7d32;
+  font-weight: 500;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
 }
